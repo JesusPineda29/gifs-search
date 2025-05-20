@@ -15,7 +15,7 @@ const GifItem = ({title, url, id}) => {
   )
 }
 
-export default GifItem      
+export { GifItem  }    
 
 
 
