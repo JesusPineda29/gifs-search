@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 
-export default function AddCategory({onNewCategory}) {
+export const  AddCategory = ({onNewCategory}) => {
 
 
     const [inputValue, setInputValue] = useState('');

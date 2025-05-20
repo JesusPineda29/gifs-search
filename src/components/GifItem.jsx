@@ -2,7 +2,7 @@
 
 
 
-const GifItem = ({title, url, id}) => {
+export const GifItem = ({title, url, id}) => {
 
 
 
@@ -15,7 +15,7 @@ const GifItem = ({title, url, id}) => {
   )
 }
 
-export { GifItem  }    
+
 
 
 
