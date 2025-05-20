@@ -1,21 +1,15 @@
-import { getGifs } from "../helpers/getGifs";
 import { useEffect, useState } from "react";
+
 import GifItem from "./GifItem";
+import { getGifs } from "../helpers/getGifs";
+import useFetchGifs from "../hooks/useFetchGifs";
+
+
 
 
 export const GifGrid = ({ category }) => { 
 
-    const [images, setImages] = useState([]);
 
-    const getImages = async () => {
-        const newImages = await getGifs(category);
-        setImages(newImages);
-    }
-
-
-    useEffect(() => {
-        getImages();
-    }, []);
 
 
     return (
@@ -29,9 +23,7 @@ export const GifGrid = ({ category }) => {
                             key={image.id}
                             title={image.title}
                             url={image.url}
-
                         />
-
                     ))
                 }
             </div>

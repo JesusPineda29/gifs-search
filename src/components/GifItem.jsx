@@ -2,7 +2,7 @@
 
 
 
-const GifItem = ({title, url}) => {
+const GifItem = ({title, url, id}) => {
 
 
 
