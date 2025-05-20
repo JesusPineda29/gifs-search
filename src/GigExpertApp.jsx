@@ -1,6 +1,10 @@
 import { useState } from "react"
 import AddCategory from "./components/AddCategory"
 import { GifGrid } from "./components/GifGrid"
+
+
+
+
 export default function GigExpertApp() {
 
   const [categories, setCategories] = useState(['One Punch']); // set categories es una funcion que se encarga de actualizar el estado de la lista
