@@ -1,7 +1,5 @@
 
 
-
-
 export const GifItem = ({title, url, id}) => {
 
 
